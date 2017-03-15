@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KNIME utilities from mind era
+Bundle-SymbolicName: com.mind_era.knime.util;singleton:=true
+Bundle-Version: 0.0.1
+Bundle-ClassPath: mindera_utils.jar
+Bundle-Activator: com.mind_era.knime.util.preprocessor.PreprocessorNodePlugin
+Bundle-Vendor: Mind Eratorsthenes Kft.
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base
+Bundle-ActivationPolicy: lazy
+Export-Package: com.mind_era.knime.util.preprocessor
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+

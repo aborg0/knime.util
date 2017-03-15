@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./PreprocessorEnd.png" type="LoopEnd" xmlns="http://knime.org/node/v2.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>Preprocessor End</name>
+    
+    <shortDescription>
+        Common preprocessing for training and evaluate end node.
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>
+        Collects the data from different preprocessing sources (training, validation, prediction).
+        It assumes that the same kind of input is there for all tables (similar to training),
+        so most probably the predicted output will differ from the expected results.
+        </intro>
+        
+        
+        <!-- option name="short name of first option (like in the dialog)">description of first option</option>
+        <option name="short name of second option (like in the dialog)">description of second option</option-->
+        <!-- possibly more options that can also be grouped by tabs -->
+        <!--
+        <tab name="Standard Options">
+            <option name="short name of first option (like in the dialog)">description of first option</option>
+            <option name="short name of second option (like in the dialog)">description of second option</option>
+        </tab>
+        <tab name="Advanced Options">
+            <option name="short name of first advanced option (like in the dialog)">description of first advanced option</option>
+        </tab>
+        -->
+    </fullDescription>
+    
+    <ports>
+        <inPort index="0" name="Preprocessed data">Data to be returned.</inPort>
+        <!-- possibly more input ports here-->
+        <outPort index="0" name="Preprocessed training data">Data to create models</outPort>
+        <outPort index="1" name="Preprocessed validation data">Data to be used to check/validate model performance</outPort>
+        <outPort index="2" name="Preprocessed prediction data">Data to be used to predict values</outPort>
+        <!-- possibly more output ports here-->
+    </ports>    
+    <!-- views-->
+        <!-- view index="0" name="name of first view">Description of first view...</view-->
+        <!--view index="1" name="name of second view">Description of second view...</view-->
+    <!-- /views-->
+</knimeNode>

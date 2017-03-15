@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+
+   <!-- This is an example for providing an own category --> 
+      <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            description="utilities from mind era"
+            icon="icons/me_icon.png"
+            level-id="mind_era_util"
+            name="mind era utils"
+            path="/community"/>
+   </extension>
+   
+   <extension point="org.knime.workbench.repository.nodes">
+      <node category-path="/community/mind_era_util" factory-class="com.mind_era.knime.util.preprocessor.PreprocessorStartNodeFactory"/>
+      <node category-path="/community/mind_era_util" factory-class="com.mind_era.knime.util.preprocessor.PreprocessorEndNodeFactory" after="com.mind_era.knime.util.preprocessor.PreprocessorStartNodeFactory"/>
+   </extension>
+   
+</plugin>
