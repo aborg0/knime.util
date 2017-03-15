@@ -1,4 +1,6 @@
 # knime.util
+
+[![Join the chat at https://gitter.im/aborg0/knime.util](https://badges.gitter.im/aborg0/knime.util.svg)](https://gitter.im/aborg0/knime.util?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 KNIME utilities from Mind Eratosthenes Kft. (mind-era)
 
 # Preprocessor nodes
